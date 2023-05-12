@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28번문제</title>
+    <script>
+
+    //prompt함수는 사용자가 데이터를 입력하면 모두 문자열로 취급한다.
+    //따라서 숫자를 입력하더라도 내부적으로 "숫자"로 인식.
+    //해결책, 숫자로 처리하기를 원할 경우 개발자가 프로그래밍 언어로 강제 정수화.
+    //강제 정수화 parseInt(대상문자열) 내장 함수를 사용하면 된다.
+    let n=prompt("수를 입력하세요.");
+    n=parseInt(n); //정수로 변환
+    let startNum=n-1; //시작값
+    let endNum=n+1; //끝값
+    for(let i=startNum; i<=endNum; i++){ //반복문은 꼭 숫자가 아닌 변수도 조건값에 적용 가능.
+        document.write(i);
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
